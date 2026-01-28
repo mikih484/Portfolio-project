@@ -1,13 +1,39 @@
-h1 {
-  font-family: "Lato", sans-serif;
-}
-p {
-  font-family: "Karla", sans-serif;
-  font-size: 12px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+p {
+  font-family: "Karla", sans-serif;
+}
+
+.header-container {
+  background-color: #0d1b2a;
+  padding: 250px 20px;
+  text-align: center;
+}
+
+.header-container h3 {
+  color: #778da9;
+  font-size: 36px;
+  margin: 0;
+}
+
+.header-container h1 {
+  color: #e0e1dd;
+  font-size: 96px;
+  margin: 0 auto;
+}
+
+.header-container h2 {
+  color: #778da9;
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 2;
 }
