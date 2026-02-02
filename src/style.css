@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  font-weight: bold;
+  font-weight: 700px;
 }
 
 p {
@@ -153,6 +153,27 @@ p {
 .about-section p {
   color: var(--secondary-color);
 }
+
+.content-container {
+  text-align: left;
+  padding: 160px;
+}
+
+.content h1 {
+  font-size: 58px;
+  font-weight: 900px;
+  line-height: 80px;
+}
+
+.content h3 {
+  font-size: 24px;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 @media (max-width: 900px) {
   .header-container {
     padding: 70px 0;
