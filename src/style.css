@@ -1,7 +1,7 @@
 :root {
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Karla", sans-serif;
-  --highlight-color: #f4978e;
+  --highlight-color: rgb(244, 151, 142);
   --secondary-color: #778da9;
   --background-color: #0d1b2a;
 }
@@ -92,16 +92,16 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.projects-container {
+.projects {
   padding: 30px 0px;
 }
 
-.projects-container h2 {
+.projects h2 {
   color: var(--background-color);
   font-size: 64px;
 }
 
-.projects-container h3 {
+.projects h3 {
   font-size: 36px;
   font-weight: 700;
   padding: 30px 0;
@@ -116,17 +116,44 @@ p {
   padding: 15px 30px;
 }
 
+.btn.btn-branding-outline:hover {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
-.image-box {
-  display: flex;
-  justify-content: center;
+.background-banner {
+  background-color: var(--background-color);
+  margin: 0;
+}
+.about-section {
+  text-align: left;
+  padding: 160px;
 }
 
-@media (max-width: 960px) {
+.about-text-box {
+  margin: 30px;
+}
+
+.about-section h1 {
+  color: var(--highlight-color);
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.about-section h2 {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+.about-section p {
+  color: var(--secondary-color);
+}
+@media (max-width: 900px) {
   .header-container {
     padding: 70px 0;
   }
@@ -138,16 +165,24 @@ p {
     font-size: 24px;
   }
 
-  .header-container h2 {
+  .header-container .about-section h2 {
     font-size: 18px;
   }
 
-  .projects-container {
+  .projects {
     padding: 0;
     text-align: center;
   }
 
-  .projects-container h2 {
+  .projects h2 {
+    font-size: 44px;
+  }
+
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-section h1 {
     font-size: 44px;
   }
 }
