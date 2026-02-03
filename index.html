@@ -32,7 +32,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar fixed-top navbar-expand-lg bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">MH</a>
           <button
@@ -68,24 +68,26 @@
     <div class="header-container">
       <div class="container">
         <div class="header-content">
-          <h3>Hello, I am</h3>
+          <h3 class="mb-4">Hello, I am</h3>
           <h1>Michaela</h1>
           <h1>Harcegova</h1>
-          <div class="header-subheading">
+          <div class="m-5">
             <h2>Frontend Developer</h2>
             <h2>based in</h2>
             <h2>London, UK</h2>
           </div>
           <div>
-            <a href="#" class="btn btn-branding">Contact me</a>
+            <a href="/about.html#contact" class="btn btn-branding"
+              >Contact me</a
+            >
           </div>
         </div>
       </div>
     </div>
-    <div class="projects container">
-      <h3>Featured Projects:</h3>
+    <div class="projects-container container">
+      <h3 class="mt-5">Featured Projects:</h3>
       <div class="row">
-        <div class="col pt-4 d-none d-lg-block">
+        <div class="col mt-5 d-none d-lg-block">
           <img
             src="/images/weather.png"
             class="img-fluid"
@@ -93,7 +95,7 @@
           />
         </div>
         <div class="col">
-          <div class="text-box">
+          <div class="content mt-5">
             <h2 class="mb-5">Weather App</h2>
             <p class="mb-4">
               A fully responsive weather application developed using HTML, CSS,
@@ -113,7 +115,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="text-box">
+          <div class="content mt-5">
             <h2 class="mb-5">AI Poem Generator</h2>
             <p class="mb-4">
               An AI-powered poem generator built with HTML, CSS, and JavaScript.
@@ -128,7 +130,7 @@
             >
           </div>
         </div>
-        <div class="col pt-4 d-none d-lg-block">
+        <div class="col mt-5 d-none d-lg-block">
           <img
             src="/images/poem.png"
             class="img-fluid"

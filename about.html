@@ -32,7 +32,7 @@
   </head>
   <body class="about-page">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar fixed-top navbar-expand-lg bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">MH</a>
           <button
@@ -49,10 +49,15 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/about.html"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/projects.html">Projects</a>
@@ -65,11 +70,11 @@
         </div>
       </nav>
     </header>
-    <div class="background-banner">
-      <div class="about-section container">
+    <div class="banner-dark">
+      <div class="content-container-dark container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="about-text-box">
+            <div class="content-dark">
               <h1 class="mb-4">Hi, I am Michaela Harcegova</h1>
               <h2 class="mb-4">Frontend developer, based in London.</h2>
               <p class="mb-5">
@@ -83,12 +88,12 @@
                 <br />
                 Dev Tools: VS Code, GitHub, Netlify, Bootstrap
               </p>
-              <a href="#" target="_blank" class="btn btn-branding"
+              <a href="/projects.html" target="_blank" class="btn btn-branding"
                 >See all projects
               </a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-5">
             <img
               src="/images/portrait.jpeg"
               class="img-fluid rounded"
@@ -100,11 +105,11 @@
     </div>
     <div class="content-container container">
       <div class="content">
-        <h1 class="mb-5" id="contact">Let's get in touch!</h1>
+        <h1 id="contact">Let's get in touch!</h1>
         <h3>Email</h3>
         <p>
           <a href="mailto:michaelaharcegova@gmail.com">
-            michaelaharcegova@gmailcom
+            michaelaharcegova@gmail.com
           </a>
         </p>
         <h3>LinkedIn</h3>
@@ -119,7 +124,7 @@
         <h3>GitHub</h3>
         <p>
           <a href="https://github.com/mikih484" target="_blank"
-            >See my code here</a
+            >See my code here !</a
           >
         </p>
       </div>

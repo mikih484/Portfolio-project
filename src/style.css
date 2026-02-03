@@ -2,8 +2,8 @@
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Karla", sans-serif;
   --highlight-color: rgb(244, 151, 142);
-  --secondary-color: #778da9;
-  --background-color: #0d1b2a;
+  --color-light: #778da9;
+  --color-dark: #0d1b2a;
 }
 
 body {
@@ -19,29 +19,25 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  font-weight: 700px;
 }
 
 p {
-  font-size: 16px;
+  color: var(--color-dark);
+  font-size: 18px;
   font-weight: normal;
   line-height: 30px;
 }
 
 .header-container {
-  background-color: var(--background-color);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   text-align: center;
-}
-
-.header-content {
-  padding: 80px 0px;
+  padding: 170px;
 }
 
 .header-container h3 {
-  color: var(--secondary-color);
   font-family: var(--font-body);
   font-size: 36px;
-  margin: 30px 0;
 }
 
 .header-container h1 {
@@ -49,23 +45,55 @@ p {
   font-size: 96px;
   font-weight: 700;
   line-height: 1;
-  margin: 0;
-}
-
-.header-subheading {
-  margin: 30px 0;
 }
 
 .header-container h2 {
-  color: var(--secondary-color);
   font-family: var(--font-body);
   font-size: 24px;
-  line-height: 1.5;
-  margin: 0;
+  line-height: 1;
 }
 
-.text-box {
-  padding: 60px 30px;
+.projects-container h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.content-container {
+  text-align: left;
+  padding: 100px 0;
+}
+
+.content h1 {
+  font-size: 58px;
+  margin: 80px 0;
+}
+
+.content h2 {
+  font-size: 44px;
+}
+
+.content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.banner-dark {
+  background-color: var(--color-dark);
+  padding: 100px 0;
+}
+
+.content-dark h1 {
+  color: var(--highlight-color);
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.content-dark h2 {
+  color: var(--color-light);
+  font-size: 24px;
+}
+.content-dark p {
+  color: var(--color-light);
 }
 
 .btn {
@@ -77,7 +105,7 @@ p {
 }
 
 .btn.btn-branding {
-  background-color: var(--background-color);
+  background-color: var(--color-dark);
   border-radius: 4px;
   color: var(--highlight-color);
   font-size: 24px;
@@ -92,27 +120,12 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.projects {
-  padding: 30px 0px;
-}
-
-.projects h2 {
-  color: var(--background-color);
-  font-size: 64px;
-}
-
-.projects h3 {
-  font-size: 36px;
-  font-weight: 700;
-  padding: 30px 0;
-}
-
 .btn.btn-branding-outline {
   border-radius: 4px;
   font-size: 21px;
   font-weight: 700;
   line-height: 27px;
-  outline: 2px solid var(--background-color);
+  outline: 2px solid var(--color-dark);
   padding: 15px 30px;
 }
 
@@ -122,66 +135,50 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.content a {
+  color: var(--color-dark);
+  text-decoration: none;
 }
 
-.background-banner {
-  background-color: var(--background-color);
-  margin: 0;
-}
-.about-section {
-  text-align: left;
-  padding: 160px;
+.content a:hover,
+.content a:active {
+  font-size: 21px;
 }
 
-.about-text-box {
-  margin: 30px;
-}
-
-.about-section h1 {
+.content a:visited {
   color: var(--highlight-color);
-  font-size: 64px;
-  font-weight: 700;
-}
-
-.about-section h2 {
-  color: var(--secondary-color);
-  font-size: 24px;
-}
-.about-section p {
-  color: var(--secondary-color);
-}
-
-.content-container {
-  text-align: left;
-  padding: 160px;
-}
-
-.content h1 {
-  font-size: 58px;
-  font-weight: 900px;
-  line-height: 80px;
-}
-
-.content h3 {
-  font-size: 24px;
-}
-
-.content p {
-  font-size: 14px;
-  line-height: 1.5;
 }
 
 .nav-item {
   line-height: 25px;
-  padding: 0 30px;
+  padding: 0 20px;
+}
+
+.navbar {
+  font-family: var(--font-heading);
+}
+
+.navbar-brand {
+  color: var(--highlight-color) !important;
+  font-weight: 800;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--highlight-color) !important;
+}
+
+.nav-link {
+  font-weight: 600 !important;
+}
+
+.navbar-toggler-icon {
+  color: var(--highlight-color);
 }
 
 @media (max-width: 900px) {
   .header-container {
-    padding: 70px 0;
+    padding: 120px 0;
   }
   .header-container h1 {
     font-size: 44px;
@@ -191,24 +188,31 @@ p {
     font-size: 24px;
   }
 
-  .header-container .about-section h2 {
+  .header-container h2 {
     font-size: 18px;
   }
 
-  .projects {
+  .projects-container h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .content {
     padding: 0;
     text-align: center;
   }
 
-  .projects h2 {
-    font-size: 44px;
+  .content h2 {
+    font-size: 36px;
   }
 
-  .about-section {
-    padding: 70px 0;
-  }
-
-  .about-section h1 {
+  .content-dark h1 {
     font-size: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-container-dark {
+    text-align: center;
   }
 }
