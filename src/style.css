@@ -183,8 +183,6 @@ footer {
 }
 
 footer .social-links a {
-  background-color: rgba(244, 151, 142, 0.2);
-  border-radius: 50%;
   color: var(--color-dark);
   font-size: 18px;
   margin: 0 25px;
@@ -196,6 +194,7 @@ footer .social-links a:hover,
 footer .social-links a:active {
   color: var(--color-dark);
   background-color: var(--highlight-color);
+  border-radius: 50%;
 }
 
 @media (max-width: 900px) {
