@@ -117,6 +117,7 @@ p {
 
 .btn.btn-branding:hover {
   background-color: var(--highlight-color);
+  color: var(--color-dark);
   transition: all 0.3s ease-in-out;
 }
 
@@ -176,6 +177,27 @@ p {
   color: var(--highlight-color);
 }
 
+footer {
+  margin: 100px 0 80px 0;
+  text-align: center;
+}
+
+footer .social-links a {
+  background-color: rgba(244, 151, 142, 0.2);
+  border-radius: 50%;
+  color: var(--color-dark);
+  font-size: 18px;
+  margin: 0 25px;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+footer .social-links a:hover,
+footer .social-links a:active {
+  color: var(--color-dark);
+  background-color: var(--highlight-color);
+}
+
 @media (max-width: 900px) {
   .header-container {
     padding: 120px 0;
@@ -208,6 +230,9 @@ p {
 
   .content-dark h1 {
     font-size: 44px;
+  }
+  footer {
+    margin: 40px 0;
   }
 }
 
